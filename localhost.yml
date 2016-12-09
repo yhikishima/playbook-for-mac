@@ -1,0 +1,55 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  roles:
+    - homebrew
+    - homebrew-cask
+#    - dotfiles
+    - npm
+  vars:
+    homebrew_packages:
+      - readline
+      - openssl
+      - { name: openssl, state: linked, install_options: force }
+      - ansible
+      - bash-completion
+      - git
+      - curl
+      - rbenv
+      - ruby-build
+      - tree
+      - wget
+      - node
+      - python
+      - { name: zsh, install_options: disable-etcdir }
+    homebrew_cask_packages:
+      - firefox
+      - google-chrome
+      - google-japanese-ime
+      - karabiner
+      - slack
+      - vagrant
+      - virtualbox
+      - appcleaner
+      - firefox
+      - genymotion
+      - google-chrome
+      - google-japanese-ime
+      - iterm2
+      - mono
+      - navicat-for-mysql
+      - java
+      - kobito
+      - licecap
+      - slack
+      - sublime-text
+      - unity
+      - vagrant
+      - virtualbox
+      - visual-studio-code
+    npm_packages:
+      - grunt-cli
+      - gulp
+      - weinre
+      - json-server

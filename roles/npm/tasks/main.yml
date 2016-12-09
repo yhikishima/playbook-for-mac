@@ -1,0 +1,4 @@
+---
+  - name: node module install
+    npm: name={{ item.name }} global=yes state=present
+    with_items: npm_packages
