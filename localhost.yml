@@ -2,6 +2,7 @@
   connection: local
   gather_facts: no
   sudo: no
+  # user: root
   roles:
     - homebrew
     - homebrew-cask
