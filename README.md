@@ -1,5 +1,5 @@
 # Playbook-for-mac
-Macの環境構築時に実行する
+Macの環境構築のためのPlaybook
 
 ## 実行手順
 

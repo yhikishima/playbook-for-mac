@@ -7,10 +7,10 @@
 # Homebrew Caskオプションの設定
 # Playbookの実行
 
-if [ $1 -eq "test" ]; then
+if [ $1 = "test" ]; then
   echo "Dry Runの実行"
   ansible-playbook -vv localhost.yml -i hosts -C
-elif [ $1 -eq "do" ]; then
+elif [ $1 = "do" ]; then
   echo "Xcodeのインストール&"
   echo "Homebrewのインストール&"
   echo "Ansibleのインストール&"
