@@ -6,9 +6,12 @@
   roles:
     - homebrew
     - homebrew-cask
+    - ruby-build
 #    - dotfiles
-    - npm
+#    - npm
   vars:
+    homebrew_repositories:
+
     homebrew_packages:
       - readline
       - openssl
@@ -24,6 +27,8 @@
       - node
       - python
       - { name: zsh, install_options: disable-etcdir }
+    homebrew_cask_repositories:
+
     homebrew_cask_packages:
       - firefox
       - google-chrome
